@@ -19,7 +19,7 @@ function hideTooltip(e) {
     tooltip.classList.add("visually-hidden");
 }
 
-addEventListener("click", showTooltip);
+addEventListener("touchstart", showTooltip);
 
 for (const c of document.querySelectorAll("table .character-nongraphic")) {
     c.addEventListener("mouseover", showTooltip);
